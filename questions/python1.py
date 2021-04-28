@@ -186,20 +186,15 @@ def five(input):
 # How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
 
 
-# def six(string, int, char):
-#     string = list(string.lower())
-#     print(string)
-#     char = char.lower()
+def six(string, int, char):
+    string = list(string.lower())
 
-#     for c in string:
-#         if string[int - 1] == char:
-#             return True
-#         return False
+    if int - 1 <= len(string):
+        if string[int - 1] == char:
+            return True
+    return False
 
 
-# print(six("The", 2, "h"))
-# print(six("AAbb", 1, "b"))
-# print(six("Hi-There", 10, "e"))
 # ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # <QUESTION 7>
@@ -300,7 +295,11 @@ def eight(arg1):
 
 def nine(input):
     string = input.lower()
-    return ""
+    if string.count("bert") < 2:
+        return ""
+    else:
+        word = string.split("bert")
+        return word[1]
 
 
 # ------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -42,12 +42,12 @@ def test_five():
     assert python1.five(8) == 40320
 
 
-# def test_six():
-#     assert python1.six("The", 2, "h") == True
-#     assert python1.six("AAbb", 1, "b") == False
-#     assert python1.six("Hi-There", 10, "e") == False
-#     assert python1.six("HEY", 2, "e") == True
-#     assert python1.six("on-premise", 3, "-") == True
+def test_six():
+    assert python1.six("The", 2, "h") == True
+    assert python1.six("AAbb", 1, "b") == False
+    assert python1.six("Hi-There", 10, "e") == False
+    assert python1.six("HEY", 2, "e") == True
+    assert python1.six("on-premise", 3, "-") == True
 
 
 def test_seven():
@@ -66,12 +66,13 @@ def test_eight():
     assert python1.eight("98 107 415") == 17
 
 
-# def test_nine():
-#     assert python1.nine("bertclivebert") == "clive"
-#     assert python1.nine("xxbertfridgebertyy") == "fridge"
-#     assert python1.nine("xxBertfridgebERtyy") == "fridge"
-#     assert python1.nine("xxbertyy") == ""
-#     assert python1.nine("xxbeRTyy") == ""
+def test_nine():
+    assert python1.nine("bertclivebert") == "clive"
+    assert python1.nine("xxbertfridgebertyy") == "fridge"
+    assert python1.nine("xxBertfridgebERtyy") == "fridge"
+    assert python1.nine("xxbertyy") == ""
+    assert python1.nine("xxbeRTyy") == ""
+
 
 # def test_ten():
 #     assert python1.ten("Jeff,random.py,False,1445") == ["Jeff"]
