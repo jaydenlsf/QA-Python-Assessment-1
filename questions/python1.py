@@ -250,8 +250,19 @@ def seven(inputString, char):
 
 
 def eight(arg1):
+    num_list = arg1.split()
 
-    return 0
+    output = []
+
+    for num in num_list:
+        sum = 0
+        digits = list(num)
+
+        for d in digits:
+            d = int(d)
+            sum += d
+        output.append(sum)
+    return max(output)
 
 
 # ------------------------------------------------------------------------------------------------------------------------------------------------------------------
