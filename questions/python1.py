@@ -126,11 +126,19 @@ def three(input):
 # Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
 
-# def four(input):
-#     for i in range(len(input) - 2):
-#         if input[i] + input[i + 1] == "ei":
-#             return True
-#     return False
+def four(input):
+    for i in range(len(input)):
+        if "ie" in input:
+            if "cie" in input:
+                return False
+            else:
+                return True
+
+        if "ei" in input:
+            if "cei" in input:
+                return True
+            else:
+                return False
 
 
 # ------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -291,6 +299,7 @@ def eight(arg1):
 
 
 def nine(input):
+    string = input.lower()
     return ""
 
 

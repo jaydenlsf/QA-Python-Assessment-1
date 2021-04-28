@@ -26,12 +26,12 @@ def test_three():
     assert python1.three("pass") == 1
 
 
-# def test_four():
-#     assert python1.four("ceiling") == True
-#     assert python1.four("believe") == True
-#     assert python1.four("glacier") == False
-#     assert python1.four("height") == False
-#     assert python1.four("receive") == True
+def test_four():
+    assert python1.four("ceiling") == True
+    assert python1.four("believe") == True
+    assert python1.four("glacier") == False
+    assert python1.four("height") == False
+    assert python1.four("receive") == True
 
 
 def test_five():
