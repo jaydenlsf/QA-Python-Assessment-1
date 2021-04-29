@@ -331,7 +331,13 @@ def nine(input):
 
 
 def ten(input):
-    return []
+    input = input.split(",")
+    owners = []
+    for i in range(len(input)):
+        if input[i] == "False" and input[i - 2] not in owners:
+            owners.append(input[i - 2])
+
+    return owners
 
 
 # ------------------------------------------------------------------------------------------------------------------------------------------------------------------

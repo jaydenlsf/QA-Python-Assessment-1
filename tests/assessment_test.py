@@ -74,9 +74,20 @@ def test_nine():
     assert python1.nine("xxbeRTyy") == ""
 
 
-# def test_ten():
-#     assert python1.ten("Jeff,random.py,False,1445") == ["Jeff"]
-#     assert python1.ten("Bert,numberGen.py,True,1447,Bert,integers.py,True,1318,Jeff,floats.py,False,1445") == ["Jeff"]
-#     assert python1.ten("Bert,boolean.py,False,1447,Bert,conditions.py,False,1318,Jeff,loops.py,False,1445") == ["Bert","Jeff"]
-#     assert python1.ten("Bert,prime.py,True,1447,Bert,ISBN.py,False,1318,Jeff,OOP.py,False,1445") == ["Bert","Jeff"]
-#     assert python1.ten("Bert,files.py,True,1447,Bert,tests.py,True,1318,Jeff,app.py,True,1445") == []
+def test_ten():
+    assert python1.ten("Jeff,random.py,False,1445") == ["Jeff"]
+    assert python1.ten(
+        "Bert,numberGen.py,True,1447,Bert,integers.py,True,1318,Jeff,floats.py,False,1445"
+    ) == ["Jeff"]
+    assert python1.ten(
+        "Bert,boolean.py,False,1447,Bert,conditions.py,False,1318,Jeff,loops.py,False,1445"
+    ) == ["Bert", "Jeff"]
+    assert python1.ten(
+        "Bert,prime.py,True,1447,Bert,ISBN.py,False,1318,Jeff,OOP.py,False,1445"
+    ) == ["Bert", "Jeff"]
+    assert (
+        python1.ten(
+            "Bert,files.py,True,1447,Bert,tests.py,True,1318,Jeff,app.py,True,1445"
+        )
+        == []
+    )
